@@ -67,11 +67,10 @@ function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <img src="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" alt="Online Tech Services Logo" className="h-8 w-8" />
-              <span className="text-xl font-bold text-gray-900">Online Tech Services</span>
-            </div>
-            
+           <div className="flex items-center space-x-2">
+  <img src="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" alt="Online Tech Services Logo" className="h-14 w-14" />
+  <span className="text-xl font-bold text-gray-900">Online Tech Services</span>
+</div>
             <div className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('accueil')} className="text-gray-700 hover:text-blue-600 transition-colors">Accueil</button>
               <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors">Services</button>
@@ -460,10 +459,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img src="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" alt="Online Tech Services Logo" className="h-8 w-8" />
-                <span className="text-xl font-bold">Online Tech Services</span>
-              </div>
+             <div className="flex items-center space-x-2 mb-4">
+  <img src="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" alt="Online Tech Services Logo" className="h-14 w-14" />
+  <span className="text-xl font-bold">Online Tech Services</span>
+</div>
               <p className="text-gray-400">
                 Votre partenaire de confiance pour tous vos besoins informatiques à distance.
               </p>
