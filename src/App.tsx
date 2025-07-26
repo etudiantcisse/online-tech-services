@@ -66,7 +66,13 @@ function App() {
       description: "Formations personnalisées pour maîtriser vos outils informatiques",
       icon: BookOpen,
       color: "from-green-500 to-green-600"
-    }
+    },
+    {
+  title: "Vente d'Ordinateurs",
+  description: "Ordinateurs neufs et reconditionnés, adaptés à vos besoins avec garantie et support.",
+  icon: Cpu, // tu utilises déjà l’icône Cpu importée
+  color: "from-pink-500 to-pink-600"
+},
   ];
 
 
@@ -488,6 +494,8 @@ function App() {
                 <li>Optimisation PC</li>
                 <li>Formations informatiques</li>
                 <li>Recrutement IT</li>
+                <li>Vente d’ordinateurs</li>
+                
               </ul>
             </div>
             
