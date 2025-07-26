@@ -322,7 +322,7 @@ function App() {
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Spécialiste en assistance informatique à distance avec plusieurs années d'expérience. 
+                  Multifonctionnaire en informatique. 
                   Je m'engage à résoudre vos problèmes informatiques rapidement et efficacement, 
                   sans que vous ayez besoin de vous déplacer.
                 </p>
