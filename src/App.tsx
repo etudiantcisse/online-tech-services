@@ -418,8 +418,8 @@ function App() {
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Formulaire de contact</h3>
-              // ...existing code...
-// ...existing code...
+              
+
 <form className="space-y-6" onSubmit={handleSubmit}>
   <div>
     <label className="block text-sm font-medium text-gray-700 mb-2">Nom</label>
