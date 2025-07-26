@@ -393,12 +393,34 @@ function App() {
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Formulaire de contact</h3>
-            
-<form 
-  className="space-y-6"
-  action="https://formspree.io/f/mdkdgbql"
-  method="POST"
->
+const [formStatus, setFormStatus] = useState<null | 'success' | 'error'>(null);
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mdkdgbql', {
+      method: 'POST',
+      body: data,
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+    if (response.ok) {
+      setFormStatus('success');
+      form.reset();
+    } else {
+      setFormStatus('error');
+    }
+  } catch {
+    setFormStatus('error');
+  }
+};
+
+
+<form className="space-y-6" onSubmit={handleSubmit}>
   <div>
     <label className="block text-sm font-medium text-gray-700 mb-2">Nom</label>
     <input 
@@ -409,7 +431,6 @@ function App() {
       required
     />
   </div>
-  
   <div>
     <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
     <input 
@@ -420,7 +441,6 @@ function App() {
       required
     />
   </div>
-  
   <div>
     <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
     <textarea 
@@ -431,7 +451,6 @@ function App() {
       required
     ></textarea>
   </div>
-  
   <button 
     type="submit"
     className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
@@ -439,7 +458,14 @@ function App() {
     <Send className="h-5 w-5" />
     <span>Envoyer le message</span>
   </button>
+  {formStatus === 'success' && (
+    <p className="text-green-600 text-center mt-4">Message envoyé avec succès !</p>
+  )}
+  {formStatus === 'error' && (
+    <p className="text-red-600 text-center mt-4">Erreur lors de l’envoi. Veuillez réessayer.</p>
+  )}
 </form>
+// ...existing code...
             </div>
           </div>
         </div>
