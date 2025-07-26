@@ -320,7 +320,7 @@ function App() {
   />
   <div className="ml-4">
     <h3 className="text-2xl font-bold text-gray-900">B. CISSE</h3>
-    <p className="text-blue-600 font-semibold">Expert Informatique</p>
+    <p className="text-blue-600 font-semibold">Informaticien</p>
   </div>
 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
