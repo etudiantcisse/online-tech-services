@@ -396,7 +396,7 @@ function App() {
                 <Instagram className="h-8 w-8 text-pink-600" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Instagram</h3>
-                  <p className="text-gray-600">@b_cisse_ofl</p>
+                  <p className="text-gray-600">@bcisse.ofl</p>
                 </div>
               </div>
 
