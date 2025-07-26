@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Monitor, Settings, GamepadIcon, Zap, BookOpen, Phone, Instagram, Mail, Send, ChevronDown, Cpu, Shield, Headphones } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,21 @@ function App() {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
- 
-    
- 
-
-
+   
        
   };
+  <HelmetProvider>
+  <Helmet>
+    <title>Online Tech Services - Assistance informatique à distance</title>
+    <meta name="description" content="Assistance, dépannage, optimisation, installation de logiciels et recrutement IT 100% en ligne." />
+    <meta property="og:title" content="Online Tech Services - Assistance informatique à distance" />
+    <meta property="og:description" content="Assistance, dépannage, optimisation, installation de logiciels et recrutement IT 100% en ligne." />
+    <meta property="og:image" content="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tonsite.com" />
+  </Helmet>
+  {/* ...le reste de ton app... */}
+</HelmetProvider>
 
   const services = [
     {
@@ -320,7 +329,7 @@ function App() {
   />
   <div className="ml-4">
     <h3 className="text-2xl font-bold text-gray-900">B. CISSE</h3>
-    <p className="text-blue-600 font-semibold">Informaticien</p>
+    <p className="text-blue-600 font-semibold">Expert Informatique</p>
   </div>
 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
@@ -387,7 +396,7 @@ function App() {
                 <Instagram className="h-8 w-8 text-pink-600" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Instagram</h3>
-                  <p className="text-gray-600">@bcisse.ofl</p>
+                  <p className="text-gray-600">@b_cisse_ofl</p>
                 </div>
               </div>
 
