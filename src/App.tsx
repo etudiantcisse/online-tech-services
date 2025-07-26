@@ -377,7 +377,7 @@ function App() {
                 <Phone className="h-8 w-8 text-blue-600" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Téléphone</h3>
-                  <p className="text-gray-600">Appelez-nous pour un support immédiat</p>
+                  <p className="text-gray-600">Appelez-nous pour un support immédiat au +221 77 633 37 16</p>
                 </div>
               </div>
 
