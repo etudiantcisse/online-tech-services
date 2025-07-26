@@ -114,12 +114,7 @@ function App() {
         <div className="absolute inset-0 bg-black/20"></div>
         
         {/* Animated Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-20 h-20 border border-blue-300 rounded-lg animate-pulse"></div>
-          <div className="absolute top-32 right-20 w-16 h-16 border border-blue-400 rounded-full animate-bounce"></div>
-          <div className="absolute bottom-32 left-32 w-12 h-12 border border-blue-200 rotate-45 animate-spin"></div>
-          <div className="absolute bottom-20 right-40 w-24 h-24 border border-blue-300 rounded-lg animate-pulse"></div>
-        </div>
+      
 
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
@@ -397,43 +392,54 @@ function App() {
 
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Formulaire de contact rapide</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Nom</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="Votre nom"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="votre@email.com"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                  <textarea 
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="Décrivez votre problème..."
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit"
-                  className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
-                >
-                  <Send className="h-5 w-5" />
-                  <span>Envoyer le message</span>
-                </button>
-              </form>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Formulaire de contact</h3>
+              // ...existing code...
+<form 
+  className="space-y-6"
+  action="https://formspree.io/f/mdkdgbql"
+  method="POST"
+>
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">Nom</label>
+    <input 
+      type="text" 
+      name="name"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+      placeholder="Votre nom"
+      required
+    />
+  </div>
+  
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+    <input 
+      type="email" 
+      name="email"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+      placeholder="votre@email.com"
+      required
+    />
+  </div>
+  
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+    <textarea 
+      rows={4}
+      name="message"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+      placeholder="Décrivez votre problème..."
+      required
+    ></textarea>
+  </div>
+  
+  <button 
+    type="submit"
+    className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
+  >
+    <Send className="h-5 w-5" />
+    <span>Envoyer le message</span>
+  </button>
+</form>
             </div>
           </div>
         </div>
