@@ -313,14 +313,16 @@ function App() {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">À propos</h2>
               <div className="bg-white rounded-2xl p-8 shadow-lg">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    BC
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-2xl font-bold text-gray-900">B. CISSE</h3>
-                    <p className="text-blue-600 font-semibold">Expert Informatique</p>
-                  </div>
-                </div>
+  <img
+    src="/bcisse.jpg" // Mets ici le chemin de ton image
+    alt="B. CISSE"
+    className="w-20 h-20 rounded-full object-cover border-4 border-blue-600"
+  />
+  <div className="ml-4">
+    <h3 className="text-2xl font-bold text-gray-900">B. CISSE</h3>
+    <p className="text-blue-600 font-semibold">Expert Informatique</p>
+  </div>
+</div>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Multifonctionnaire en informatique. 
                   Je m'engage à résoudre vos problèmes informatiques rapidement et efficacement, 
