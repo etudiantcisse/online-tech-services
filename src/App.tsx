@@ -314,8 +314,8 @@ function App() {
               <div className="bg-white rounded-2xl p-8 shadow-lg">
                 <div className="flex items-center mb-6">
   <img
-    src="/bcisse.jpg" // Mets ici le chemin de ton image
-    alt="B. CISSE"
+    src="/bcisse.jpg" 
+    alt=""
     className="w-20 h-20 rounded-full object-cover border-4 border-blue-600"
   />
   <div className="ml-4">
