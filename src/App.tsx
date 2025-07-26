@@ -393,7 +393,7 @@ function App() {
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Formulaire de contact</h3>
-              // ...existing code...
+            
 <form 
   className="space-y-6"
   action="https://formspree.io/f/mdkdgbql"
