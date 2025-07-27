@@ -31,7 +31,12 @@ function App() {
     <meta property="og:description" content="Assistance, dépannage, optimisation, installation de logiciels et recrutement IT 100% en ligne." />
     <meta property="og:image" content="/ChatGPT_Image_25_juil._2025__00_15_40-removebg-preview.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tonsite.com" />
+    <meta property="og:url" content="https://otechs.netlify.app" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Online Tech Services" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
   </Helmet>
   {/* ...le reste de ton app... */}
 </HelmetProvider>
@@ -336,7 +341,7 @@ function App() {
   />
   <div className="ml-4">
     <h3 className="text-2xl font-bold text-gray-900">B. CISSE</h3>
-    <p className="text-blue-600 font-semibold">Expert Informatique</p>
+    <p className="text-blue-600 font-semibold"> Informaticien</p>
   </div>
 </div>
                 <p className="text-gray-600 leading-relaxed mb-6">
