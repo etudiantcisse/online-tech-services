@@ -38,8 +38,10 @@ function App() {
   <meta name="apple-mobile-web-app-title" content="Online Tech Services" />
   <link rel="apple-touch-icon" href="/logo192.png" />
   </Helmet>
+   
   {/* ...le reste de ton app... */}
 </HelmetProvider>
+  
 
   const services = [
     {
