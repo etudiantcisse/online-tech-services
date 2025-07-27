@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Monitor, Settings, GamepadIcon, Zap, BookOpen, Phone, Instagram, Mail, Send, ChevronDown, Cpu, Shield, Headphones } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { isIOS } from 'react-device-detect';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,11 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  
+   const animationClass = isIOS ? '' : 'animate-bounce';
+
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
