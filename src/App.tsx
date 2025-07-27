@@ -141,7 +141,7 @@ function App() {
 
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
-            <Monitor className="h-20 w-20 mx-auto mb-8 text-blue-300 transition-transform duration-500 ease-in-out hover:scale-110" />
+{/*             <Monitor className="h-20 w-20 mx-auto mb-8 text-blue-300 transition-transform duration-500 ease-in-out hover:scale-110" /> */}
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Online Tech <span className="text-blue-300">Services</span>
